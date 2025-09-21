@@ -1,0 +1,19 @@
+.images-banner {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.max-height {
+    max-height: 250px;
+}
+
+.card-images {
+    background-color: #F0F3F6;
+}
+
+
+.first-item {
+    padding: 10px;
+    color: rgb(105, 105, 105);
+}

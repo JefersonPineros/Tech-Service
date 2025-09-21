@@ -1,0 +1,57 @@
+<p-menubar styleClass="custom-menubar">
+  <ng-template #start>
+    <div class="grid ml-5">
+      <div class="col">
+        <div class="grid">
+          <div class="col-1">
+            <img src="assets/images/Cubo.png" class="icon-techServe" alt="" />
+          </div>
+          <div class="col-2 mt-2">
+            <h3>TechServe</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #end>
+    <div class="grid mt-2">
+      <div class="col">
+        <p-button label="Inicio" severity="info"></p-button>
+      </div>
+      <div class="col">
+        <p-button
+          label="Servicios"
+          severity="secondary"
+          variant="text"
+          styleClass="button-text"
+        ></p-button>
+      </div>
+      <div class="col">
+        <p-button
+          label="Administración"
+          severity="secondary"
+          variant="text"
+          styleClass="button-text"
+        ></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-menubar>
+
+<div class="grid">
+  <div class="col p-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<footer class="app-footer">
+  <div class="footer-left">
+    <span>© 2025 TechServe. Todos los derechos reservados.</span>
+  </div>
+  <div class="footer-right">
+    <i class="pi pi-phone"></i>
+    <span>+54 11 5555-5555</span>
+    <i class="pi pi-envelope"></i>
+    <a href="mailto:contacto@techserve.com">contacto@techserve.com</a>
+  </div>
+</footer>
