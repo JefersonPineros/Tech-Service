@@ -1,0 +1,22 @@
+.image-item {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    max-height: 500px;
+    margin: 0 auto
+}
+
+.style-chip {
+    --p-chip-background: #FFD166;
+    --p-chip-color: white;
+    --p-chip-icon-color: white;
+}
+
+.cost-text {
+    color: darkgray;
+}
+
+.first-item {
+    padding: 10px;
+    color: rgb(105, 105, 105);
+}

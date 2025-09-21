@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({

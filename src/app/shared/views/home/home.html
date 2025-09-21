@@ -16,7 +16,7 @@
   <ng-template #end>
     <div class="grid mt-2">
       <div class="col">
-        <p-button label="Inicio" severity="info"></p-button>
+        <p-button label="Inicio" severity="info" (click)="goHome()"></p-button>
       </div>
       <div class="col">
         <p-button
@@ -24,6 +24,7 @@
           severity="secondary"
           variant="text"
           styleClass="button-text"
+          (click)="goService()"
         ></p-button>
       </div>
       <div class="col">
@@ -32,6 +33,7 @@
           severity="secondary"
           variant="text"
           styleClass="button-text"
+          (click)="goAdminPage()"
         ></p-button>
       </div>
     </div>

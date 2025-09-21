@@ -1,1 +1,25 @@
-<p>services works!</p>
+<div class="grid">
+  <div class="col">
+    <div class="grid mt-2 mb-3">
+      <div class="col-9"><h1>Catálogo de Servicios</h1></div>
+      <div class="col-3"></div>
+    </div>
+    <div class="grid">
+      @for (item of listServices; track $index) {
+      <div class="col-3" (click)="showDescription(item.id!)">
+        <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+          <ng-template #header>
+            <img class="image-item max-height" src="{{ item.image }}" alt="" />
+          </ng-template>
+          <ng-template #title>
+            {{ item.name_service }}
+          </ng-template>
+          <ng-template #subtitle>
+            {{ item.cost | currency : 'USD' }} / {{ item.type_cost }}
+          </ng-template>
+        </p-card>
+      </div>
+      }
+    </div>
+  </div>
+</div>

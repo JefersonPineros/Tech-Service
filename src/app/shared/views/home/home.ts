@@ -9,4 +9,18 @@ import { Menubar } from 'primeng/menubar';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {}
+export class Home {
+  constructor(private router: Router) {}
+
+  goHome() {
+    this.router.navigate(['/shared/views/home']);
+  }
+
+  goService() {
+    this.router.navigate(['/shared/views/home/services']);
+  }
+
+  goAdminPage() {
+    this.router.navigate(['/shared/views/home/admin-page']);
+  }
+}

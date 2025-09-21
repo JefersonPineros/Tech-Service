@@ -1,0 +1,66 @@
+<div class="grid">
+  <div class="col">
+    <p-card class="item-description">
+      <div class="grid">
+        <div class="col p-5 flex justify-center items-center">
+          <img class="image-item" src="{{ itemService.image }}" alt="" />
+        </div>
+        <div class="col">
+          <div class="grid">
+            <div class="col">
+              <div class="flex flex-row flex-wrap">
+                <div>
+                  <h2>{{ itemService.name_service }}</h2>
+                </div>
+                @if (itemService.promotion) {
+                <div class="ml-3 mt-3">
+                  <p-chip styleClass="style-chip" label="En promoción" icon="pi pi-bolt" />
+                </div>
+                }
+              </div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col">
+              <p class="cost-text">
+                {{ itemService.cost | currency : 'USD' }} / {{ itemService.type_cost }}
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="first-item">Descripcion</td>
+                    <td style="padding-left: 20px">{{ itemService.description }}</td>
+                  </tr>
+                  <tr>
+                    <td class="first-item">Incluye</td>
+                    <td style="padding-left: 20px">{{ itemService.type_service }}</td>
+                  </tr>
+                  <tr>
+                    <td class="first-item">SLA</td>
+                    <td style="padding-left: 20px">{{ itemService.sla }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="grid mt-4">
+            <div class="col">
+              <div class="flex flex-row flex-wrap">
+                <p-button
+                  icon="pi pi-shopping-cart"
+                  class="mr-2"
+                  label="Solicitar Cotización"
+                ></p-button>
+                <p-button icon="pi pi-arrow-left" label="Volver" severity="secondary"></p-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>

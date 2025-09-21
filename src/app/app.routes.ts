@@ -52,6 +52,13 @@ export const routes: Routes = [
                 loadComponent: () =>
                   import('./shared/views/home/admin-page/admin-page').then((c) => c.AdminPage),
               },
+              {
+                path: 'services/:id',
+                loadComponent: () =>
+                  import('./shared/views/home/description-service/description-service').then(
+                    (c) => c.DescriptionService
+                  ),
+              },
             ],
           },
         ],
