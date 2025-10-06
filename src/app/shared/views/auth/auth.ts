@@ -60,7 +60,7 @@ export class Auth {
             });
             setTimeout(() => {
               this.router.navigate(['/shared/views/home']);
-            }, 4000);
+            }, 1000);
           } else {
             this.messageService.add({
               severity: 'error',
