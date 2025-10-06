@@ -1,0 +1,24 @@
+.color-header th {
+    background-color: #E9EEF8;
+}
+
+.tabla-personalizada {
+  border-radius: 12px;
+  overflow: hidden; /* Para que el contenido respete el borde redondeado */
+}
+
+:host ::ng-deep .p-datatable-table-container  {
+  border: 1px solid #ccc; /* color del borde externo */
+  border-collapse: collapse;
+  border-radius: 6px; /* opcional: esquinas redondeadas */
+  overflow: hidden; /* mantiene el borde limpio */
+}
+
+.style-chip {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 13px;
+    --p-chip-background: #16A34A;
+    --p-chip-color: white;
+    --p-chip-icon-color: white;
+}

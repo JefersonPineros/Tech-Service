@@ -41,4 +41,8 @@ export class DescriptionService implements OnInit {
       },
     });
   }
+
+  backPage(): void {
+    this.router.navigate(['/shared/views/home/page-init']);
+  }
 }

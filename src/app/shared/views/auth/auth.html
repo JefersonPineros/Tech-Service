@@ -1,1 +1,78 @@
-<p-button label="check"></p-button>
+<p-menubar styleClass="custom-menubar">
+  <ng-template #start>
+    <div class="grid ml-5">
+      <div class="col">
+        <div class="grid">
+          <div class="col-1">
+            <img src="assets/images/Cubo.png" class="icon-techServe" alt="" />
+          </div>
+          <div class="col-2 mt-2">
+            <h3>TechServe</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-menubar>
+<div class="color-body">
+  <div class="grid">
+    <div class="col flex justify-content-center flex-wrap items-center">
+      <p-card>
+        <ng-template #header>
+          <div class="grid pt-4">
+            <div class="col" style="text-align: center">
+              <div><i class="pi pi-lock"></i></div>
+              <div><strong>Iniciar Sesión</strong></div>
+              <div>
+                <span style="font-size: 10px; color: grey"
+                  >Accede para gestionar los servicios</span
+                >
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <div class="grid">
+          <div class="col">
+            <p-floatlabel variant="in">
+              <textarea
+                pTextarea
+                id="over_label"
+                [(ngModel)]="userlogin.email"
+                rows="2"
+                cols="30"
+                style="resize: none"
+                class="h-full"
+              ></textarea>
+              <label for="in_label">Usuario</label>
+            </p-floatlabel>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col">
+            <p-floatlabel variant="in">
+              <textarea
+                pTextarea
+                id="over_label"
+                [(ngModel)]="userlogin.password"
+                rows="2"
+                cols="30"
+                style="resize: none"
+                class="h-full"
+              ></textarea>
+              <label for="in_label">Contraseña</label>
+            </p-floatlabel>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col">
+            <button (click)="login()" pButton class="w-full">
+              <i class="pi pi-sign-in" pButtonIcon></i>
+              <span pButtonLabel>Iniciar sesión</span>
+            </button>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>
+<p-toast position="bottom-right" key="br"> </p-toast>

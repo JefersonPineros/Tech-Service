@@ -1,1 +1,145 @@
-<p>admin-page works!</p>
+<div class="grid p-2">
+  <div class="col-6">
+    <div class="grid">
+      <div class="col">
+        <h2>
+          Servicios
+          <span style="font-size: 15px; color: rgb(172, 172, 172)">Gestiona el catálogo</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 flex flex-row-reverse flex-wrap">
+    <div class="grid mt-2">
+      <div class="col">
+        <button pButton (click)="openDialog()">
+          <i class="pi pi-plus" pButtonIcon></i>
+          <span pButtonLabel>Agregar Nuevo Servicio</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grid p-2">
+  <div class="col">
+    <p-table [value]="listItems" class="tabla-borde-externo">
+      <ng-template #header>
+        <tr class="border-round-top color-header">
+          <th>imagen</th>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>cantidad</th>
+          <th>Descripción</th>
+          <th>Acciones</th>
+        </tr>
+      </ng-template>
+      <ng-template #body let-product>
+        <tr>
+          <td><img class="w-24 border-round" [src]="product.image" width="100" /></td>
+          <td>
+            {{ product.name_service }}
+            @if (product.promotion) {
+            <p-chip styleClass="style-chip" label="Promo" />
+            }
+          </td>
+          <td>{{ product.cost | currency : 'USD' }} / {{ product.type_cost }}</td>
+          <td>{{ product.cuantity }}</td>
+          <td style="max-width: 350px">{{ product.description }}</td>
+          <td>
+            <button pButton (click)="openDialog(product)" class="p-button p-button mr-2">
+              <i class="pi pi-pencil" pButtonIcon></i>
+              <span pButtonLabel>Editar</span>
+            </button>
+            <button pButton (click)="deleteItem(product.id)" class="p-button p-button-danger">
+              <i class="pi pi-trash" pButtonIcon></i>
+              <span pButtonLabel>Eliminar</span>
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
+
+<p-dialog [(visible)]="showDialog" [modal]="true">
+  <ng-template #header>
+    <div class="inline-flex items-center justify-center gap-2">
+      <i class="pi pi-pen-to-square"></i>
+      <strong> Agregar / Editar Servicio</strong>
+    </div>
+  </ng-template>
+
+  <div class="grid">
+    <div class="col">
+      <div class="grid">
+        <div class="col">
+          <p-floatlabel variant="in">
+            <input pInputText id="in_label" [(ngModel)]="itemSelected.image" autocomplete="off" />
+            <label for="in_label">Url Image</label>
+          </p-floatlabel>
+        </div>
+        <div class="col">
+          <p-floatlabel variant="in">
+            <input
+              pInputText
+              id="in_label"
+              [(ngModel)]="itemSelected.name_service"
+              autocomplete="off"
+            />
+            <label for="in_label">Nombre</label>
+          </p-floatlabel>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="col">
+          <p-floatlabel variant="in">
+            <input pInputText id="in_label" [(ngModel)]="itemSelected.cost" autocomplete="off" />
+            <label for="in_label">Precio</label>
+          </p-floatlabel>
+        </div>
+        <div class="col">
+          <p-floatlabel variant="in">
+            <input
+              pInputText
+              id="in_label"
+              [(ngModel)]="itemSelected.cuantity"
+              autocomplete="off"
+            />
+            <label for="in_label">Cantidad</label>
+          </p-floatlabel>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="col-12">
+          <p-floatlabel variant="in">
+            <textarea
+              pTextarea
+              id="over_label"
+              [(ngModel)]="itemSelected.description"
+              rows="5"
+              cols="30"
+              style="resize: none"
+              class="h-full"
+              fluid
+            ></textarea>
+            <label for="in_label">In Label</label>
+          </p-floatlabel>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="col flex flex-row flex-wrap">
+      <p-toggleswitch [(ngModel)]="itemSelected.promotion" />
+    </div>
+    <div class="col flex flex-row-reverse flex-wrap">
+      <button pButton (click)="showDialog = false" class="p-button p-button">
+        <i class="pi pi-save" pButtonIcon></i>
+        <span pButtonLabel>Guardar</span>
+      </button>
+      <button pButton (click)="showDialog = false" class="p-button p-button-secondary mr-2">
+        <span pButtonLabel>Cancelar</span>
+      </button>
+    </div>
+  </div>
+</p-dialog>

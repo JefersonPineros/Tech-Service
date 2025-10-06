@@ -8,6 +8,7 @@ export class ServicesTech {
     public sla?: string,
     public image?: string,
     public cost?: number,
-    public type_cost?: string
+    public type_cost?: string,
+    public cuantity?: number
   ) {}
 }

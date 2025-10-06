@@ -23,7 +23,8 @@
           <div class="grid">
             <div class="col">
               <p class="cost-text">
-                {{ itemService.cost | currency : 'USD' }} / {{ itemService.type_cost }}
+                <i class=""></i>{{ itemService.cost | currency : 'USD' }} /
+                {{ itemService.type_cost }}
               </p>
             </div>
           </div>
@@ -55,7 +56,12 @@
                   class="mr-2"
                   label="Solicitar Cotización"
                 ></p-button>
-                <p-button icon="pi pi-arrow-left" label="Volver" severity="secondary"></p-button>
+                <p-button
+                  (click)="backPage()"
+                  icon="pi pi-arrow-left"
+                  label="Volver"
+                  severity="secondary"
+                ></p-button>
               </div>
             </div>
           </div>
