@@ -1,0 +1,17 @@
+[
+  {
+    "email": "jpinerosp@poligran.edu.co",
+    "password": "jeferson123",
+    "profile_type": "admin"
+  },
+  {
+    "email": "pruebaUsuario@gmail.com",
+    "password": "prueba@456",
+    "profile_type": "user"
+  },
+  {
+    "email": "jolarte@poligran.edu.co",
+    "password": "jolarteAccesoPrueba",
+    "profile_type": "admin"
+  }
+]
