@@ -1,0 +1,1 @@
+import{d as s,i as n}from"./chunk-MAE4A3OU.js";import"./chunk-NG2MCBW7.js";import{Na as i,lb as o}from"./chunk-WBDU4WME.js";var r=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=i({type:t,selectors:[["app-views"]],decls:1,vars:0,template:function(e,p){e&1&&o(0,"router-outlet")},dependencies:[n,s],encapsulation:2})};export{r as Views};

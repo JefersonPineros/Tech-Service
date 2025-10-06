@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name_service": "Infraestructura en la Nube",
+    "promotion": true,
+    "description": "Arquitectura, despliegue y operación de entornos cloud en AWS/Azure/GCP con seguridad y escalabilidad.",
+    "type_service": "Monitoreo, backups, optimización de costos, respuesta a incidentes.",
+    "sla": "99.9% disponibilidad, soporte 24/7",
+    "image": "assets/images/services/service1.png",
+    "cost": 1200,
+    "type_cost": "mes",
+    "cuantity": 35
+  },
+  {
+    "id": 2,
+    "name_service": "DevOps y Automatización",
+    "promotion": false,
+    "description": "Integración continua (CI/CD) y automatización de procesos de desarrollo y despliegue.",
+    "type_service": "Pipelines en GitHub Actions / GitLab CI / Jenkins./ Infraestructura como código (Terraform, Ansible) / Automatización de pruebas y despliegues",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service2.png",
+    "cost": 900,
+    "type_cost": "mes",
+    "cuantity": 50
+  },
+  {
+    "id": 3,
+    "name_service": "Ciberseguridad Gestionada",
+    "promotion": false,
+    "description": "Protección proactiva de sistemas, datos y redes frente a amenazas",
+    "type_service": "Monitoreo de seguridad 24/7 (SIEM/SOC) / Análisis de vulnerabilidades y pentesting / Configuración de firewalls y WAF / Políticas de identidad y acceso (IAM)",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service3.png",
+    "cost": 1500,
+    "type_cost": "mes",
+    "cuantity": 10
+  },
+  {
+    "id": 4,
+    "name_service": "Analítica de Datos",
+    "promotion": true,
+    "description": "Recolección, procesamiento y visualización de datos para la toma de decisiones",
+    "type_service": "ETL y almacenamiento de datos / Tableros en Power BI, Tableau o Looker / Modelos de predicción con machine learning",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service4.png",
+    "cost": 1100,
+    "type_cost": "mes",
+    "cuantity": 65
+  },
+  {
+    "id": 5,
+    "name_service": "Desarrollo Mobile",
+    "promotion": true,
+    "description": "Creación de aplicaciones móviles nativas e híbridas para Android e iOS",
+    "type_service": "Apps en Flutter, React Native o Kotlin/Swift / Integración con APIs y servicios cloud / Notificaciones push y autenticación segura / Publicación en App Store y Google Play",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service5.png",
+    "cost": 2000,
+    "type_cost": "proyecto",
+    "cuantity": 25
+  },
+  {
+    "id": 6,
+    "name_service": "Web Apps a Medida",
+    "promotion": false,
+    "description": "Aplicaciones web personalizadas según las necesidades del negocio",
+    "type_service": "Backend con Spring Boot, Node.js o .NET / Frontend con Angular, React o Vue / Integración con pasarelas de pago / Escalabilidad en la nube",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service6.png",
+    "cost": 3500,
+    "type_cost": "proyecto",
+    "cuantity": 5
+  },
+  {
+    "id": 7,
+    "name_service": "Soporte IT 24/7",
+    "promotion": false,
+    "description": "Asistencia técnica en cualquier momento para garantizar continuidad operativa",
+    "type_service": "Mesa de ayuda en tiempo real / Monitoreo de servidores y redes / Resolución de incidentes críticos / Mantenimiento preventivo",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service7.png",
+    "cost": 700,
+    "type_cost": "mes",
+    "cuantity": 8
+  },
+  {
+    "id": 8,
+    "name_service": "Redes y Conectividad",
+    "promotion": true,
+    "description": "Diseño, instalación y mantenimiento de redes seguras y eficientes",
+    "type_service": "Cableado estructurado y configuración LAN/WAN / VPNs seguras / WiFi empresarial / Firewalls y segmentación de red",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service8.png",
+    "cost": 950,
+    "type_cost": "proyecto",
+    "cuantity": 32
+  },
+  {
+    "id": 9,
+    "name_service": "Diseño UX/UI",
+    "promotion": true,
+    "description": "Experiencias digitales atractivas y fáciles de usar para apps y webs",
+    "type_service": "Investigación de usuario / Wireframes y prototipado / Diseño de interfaces responsivas / Pruebas de usabilidad",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service9.png",
+    "cost": 1800,
+    "type_cost": "proyecto",
+    "cuantity": 50
+  },
+  {
+    "id": 10,
+    "name_service": "QA y Testing",
+    "promotion": false,
+    "description": "Garantía de calidad para aplicaciones mediante pruebas automatizadas y manuales",
+    "type_service": "Pruebas unitarias, de integración y funcionales / Testing de rendimiento y carga / Automatización con Selenium, Cypress o JUnit / Reportes de defectos y métricas de calidad",
+    "sla": "soporte 24/7",
+    "image": "assets/images/services/service10.png",
+    "cost": 1000,
+    "type_cost": "proyecto",
+    "cuantity": 11
+  }
+]
